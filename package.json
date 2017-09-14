@@ -1,11 +1,15 @@
 {
   "name": "nodesocketchat",
   "version": "1.0.0",
-  "description": "node js with socket io for chats",
+  "description": "node js with socket io",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "mohit kumar",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^2.0.3"
+  }
 }
