@@ -9,7 +9,7 @@ var io=require("socket.io")(server);
 app.use(express.static(path.join(__dirname,"public")));
 
 var port=8888;
-
+/*
 io.on('connection',function (socket) {
 // emit to send messages.
     socket.emit('message-from-server',{
@@ -20,12 +20,12 @@ io.on('connection',function (socket) {
     // on to receive messages.
     socket.on('message-from-client',function (msg) {
 
-        console.log(msg);
+        console.log(msg.greeting);
     })
 
     console.log('new connection made');
 });
-
+*/
 server.listen(port,function () {
     console.log('Listening to port',port);
 });
